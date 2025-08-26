@@ -46,8 +46,7 @@ Aqui você pode criar e destruir blocos em um mundo 3D e controlar um jogador em
 
 ### 3️⃣ Clonar o projeto
 - No terminal do VS Code, vá até a pasta onde quer o projeto e rode:
-
-**git clone https://github.com/Cyzeone/minecraft.git**
+- git clone https://github.com/Cyzeone/minecraft.git
 
 ### 4️⃣ Entrar na pasta do projeto
 - cd minecraft
