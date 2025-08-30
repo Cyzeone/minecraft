@@ -16,6 +16,8 @@ Aqui você pode criar e destruir blocos em um mundo 3D e controlar um jogador em
 - Jogador em **primeira pessoa** (WASD + mouse para olhar)
 - Criar blocos com **clique esquerdo**
 - Remover blocos com **clique direito**
+- Tela cheia com F
+- Pausar/Retomar jogo com P
 - Mundo 3D com **chão de blocos de grama**
 - Skybox automático (céu)
 
@@ -73,6 +75,8 @@ Here you can create and destroy blocks in a 3D world and control a first-person 
 - First-person player (WASD + mouse to look around)  
 - Create blocks with **left click**  
 - Remove blocks with **right click**  
+- Fullscreen with F
+- Pause/Resume the game with P
 - 3D world with **grass block floor**  
 - Automatic skybox
 
