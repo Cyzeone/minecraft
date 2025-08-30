@@ -1,8 +1,19 @@
 from ursina import *
 from ursina.prefabs.first_person_controller import FirstPersonController
+window.size = (1280, 720)  # largura x altura
 app = Ursina()
 player = FirstPersonController()
 Sky()
+
+pause_text = Text(
+    text='',
+    origin=(0,0),
+    scale=2,
+    color=color.azure,
+    background=False,
+)
+
+game_paused = False
 
 boxes = []
 for i in range(20):
@@ -12,6 +23,25 @@ for i in range(20):
         boxes.append(box)
 
 def input(key):
+    global game_paused
+
+    if key == 'p':
+        if not game_paused:
+            game_paused = True
+            player.enabled = False
+            pause_text.text = 'Jogo Pausado\nPressione P para continuar'
+        else:
+            game_paused = False
+            player.enabled = True
+            pause_text.text = 'Jogo Retomado'
+            invoke(setattr, pause_text, 'text', '', delay=2)
+
+    if key == 'f':
+        if not window.fullscreen:
+            window.fullscreen = True
+        else:
+            window.fullscreen = False
+
     for box in boxes:
         if box.hovered:
             if key == 'left mouse down':
